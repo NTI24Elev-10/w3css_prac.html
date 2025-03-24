@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>W3CSS Kortsida</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster">
+    <style>
+	
+        body {
+            font-family: Lobster;
+            background-color: white;
+            margin: 0;
+            height: 100vh;
+        }
+
+        /* Swedish flag background */
+        #flag-background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            background-color: #006AA7;
+        }
+
+        #flag-background:before { /* Horizontal yellow bar */
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 20%;
+            background-color: #FFCE00;
+            top: 40%;
+        }
+
+        #flag-background:after { /* Vertical yellow bar */
+            content: "";
+            position: absolute;
+            width: 20%;
+            height: 100%;
+            background-color: #FFCE00;
+            left: 30%;
+        }
+
+        .w3-row {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            padding: 20px;
+        }
+
+        .w3-card {
+            padding: 15px;
+            text-align: center;
+            width: 280px; /* uniform size */
+            min-height: 350px;
+            border-radius: 10px;
+        }
+
+        .card-text {
+            display: none;
+        }
+
+        .w3-card:hover .card-text {
+            display: block;
+        }
+
+        .w3-card img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        /* Set the background colors directly inside the cards */
+        .card1 { background-color: rgba(0, 255, 255, 0.6); } /* Aqua */
+        .card2 { background-color: rgba(0, 128, 0, 0.6); }   /* Green */
+        .card3 { background-color: rgba(128, 0, 128, 0.6); } /* Purple */
+
+    </style>
+</head>
+<body>
+    <div id="flag-background"></div>
+
+    <div class="w3-container w3-center w3-xlarge" style="margin-top: 20px;">
+        Min Kortsida
+    </div>
+
+    <div class="w3-row">
+        <div class="w3-card card1">
+            <div class="w3-large">Titel 1</div>
+            <img src="Europa.jpg" class="w3-image" alt="Europa">
+            <p class="card-text">qkömqfq</p>
+        </div>
+
+        <div class="w3-card card2">
+            <div class="w3-large">Titel 2</div>
+            <img src="Monster.jpg" class="w3-image" alt="Monster">
+            <p class="card-text">qkwjreq</p>
+        </div>
+
+        <div class="w3-card card3">
+            <div class="w3-large">Titel 3</div>
+            <img src="Stockholm.jpg" class="w3-image" alt="Stockholm">
+            <p class="card-text">klqöjdqfn</p>
+        </div>
+    </div>
+	
+	<div class="w3-grid" style="gap:8px;grid-template-columns:repeat(auto-fit,minmax(150px,1fr))">
+		<div class="w3-padding w3-green"><h3>1</h3></div>
+		<div class="w3-padding w3-green"><h3>2</h3></div>
+		<div class="w3-padding w3-green"><h3>3</h3></div>
+		<div class="w3-padding w3-green"><h3>4</h3></div>
+		<div class="w3-padding w3-green"><h3>5</h3></div>
+		<div class="w3-padding w3-green"><h3>6</h3></div>
+		<div class="w3-padding w3-green"><h3>7</h3></div>
+		<div class="w3-padding w3-green"><h3>8</h3></div>
+		<div class="w3-padding w3-green"><h3>9</h3></div>
+	</div>
+</body>
+</html>
